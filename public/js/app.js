@@ -6,7 +6,7 @@ weatherForm.addEventListener('submit', (e) => {
     document.querySelector('.weather-card').style.display = "none"
     e.preventDefault()
     let location = document.getElementById('location').value
-    fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
+    fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((responseData) => {
             if (responseData.error) {
                 document.querySelector('.error-section p').innerHTML = responseData.error;
