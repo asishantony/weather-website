@@ -1,6 +1,3 @@
-
-
-
 let weatherForm = document.querySelector('form')
 
 weatherForm.addEventListener('submit', (e) => {
